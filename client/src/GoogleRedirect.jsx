@@ -8,7 +8,7 @@ const GoogleRedirect = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:3001/api/auth/me", { withCredentials: true })
+    axios.get("https://rhombus-tnso.onrender.com/api/auth/me", { withCredentials: true })
       .then((res) => {
         setUser(res.data.user);
         if (res.data.user.role === "admin") navigate("/dash");

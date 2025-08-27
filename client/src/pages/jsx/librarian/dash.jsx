@@ -37,10 +37,10 @@ const [allData2, setAllData2] = useState(null);
 
   const getData = async () => {
     try {
-      const roomsRes = await axios.get("http://localhost:3001/api/enter/allbookhistory",
+      const roomsRes = await axios.get("https://rhombus-tnso.onrender.com/api/enter/allbookhistory",
     { withCredentials: true });
       setAllData(roomsRes.data.data);
-      const roomsRes2 = await axios.get("http://localhost:3001/api/enter/totalmember",
+      const roomsRes2 = await axios.get("https://rhombus-tnso.onrender.com/api/enter/totalmember",
     { withCredentials: true });
       setAllData2(roomsRes2.data.data);
     } catch (error) {
@@ -51,7 +51,7 @@ const [allData2, setAllData2] = useState(null);
   const handleLogout = async () => {
     try {
       const response = await axios.post(
-        'http://localhost:3001/api/enter/logout',
+        'https://rhombus-tnso.onrender.com/api/enter/logout',
         {},
         {
           withCredentials: true,

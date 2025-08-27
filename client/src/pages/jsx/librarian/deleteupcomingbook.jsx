@@ -10,7 +10,7 @@ function S()
 
       const handleSubmit = (e) => {
           e.preventDefault()
-          axios.delete("http://localhost:3001/api/enter/deleteupcomingbook", { data: {bookid,edition}  ,
+          axios.delete("https://rhombus-tnso.onrender.com/api/enter/deleteupcomingbook", { data: {bookid,edition}  ,
     withCredentials: true} )
    
           .then(result => {

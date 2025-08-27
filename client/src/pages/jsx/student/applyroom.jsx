@@ -19,7 +19,7 @@ function S()
 
       const handleSubmit = (e) => {
           e.preventDefault()
-          axios.post("http://localhost:3001/api/enter/applyroom", { name, SID,start,endx,roomnumber,numofs },
+          axios.post("https://rhombus-tnso.onrender.com/api/enter/applyroom", { name, SID,start,endx,roomnumber,numofs },
     { withCredentials: true })
           .then(result => {
               console.log(result)

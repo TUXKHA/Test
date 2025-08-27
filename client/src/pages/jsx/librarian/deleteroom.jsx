@@ -12,7 +12,7 @@ function S()
 
       const handleSubmit = (e) => {
           e.preventDefault()
-          axios.delete(`http://localhost:3001/api/enter/removeroom`, {data: { roomnumber },
+          axios.delete(`https://rhombus-tnso.onrender.com/api/enter/removeroom`, {data: { roomnumber },
      withCredentials: true })
           .then(result => {
               console.log(result)

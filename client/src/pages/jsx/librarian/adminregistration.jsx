@@ -17,7 +17,7 @@ function S()
           {alert("Password Didnt Match")
           return;
         }
-        axios.post("http://localhost:3001/api/enter/adminregistretion", {email, password },
+        axios.post("https://rhombus-tnso.onrender.com/api/enter/adminregistretion", {email, password },
     { withCredentials: true })
         .then(result => {
           console.log(result)

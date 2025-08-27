@@ -17,14 +17,14 @@ function App() {
   const getData = async () => {
     try {
       const roomsRes = await axios.get(
-        "http://localhost:3001/api/enter/getAllFavouriteBooksDetails",
+        "https://rhombus-tnso.onrender.com/api/enter/getAllFavouriteBooksDetails",
   {
     withCredentials: true,
   }
       );
       setAllData(roomsRes.data);
       const roomsRes2 = await axios.get(
-        "http://localhost:3001/api/enter/recentlyreturned",
+        "https://rhombus-tnso.onrender.com/api/enter/recentlyreturned",
   {
     withCredentials: true,
   }
@@ -39,7 +39,7 @@ function App() {
 const handleLogout = async () => {
   try {
     const response = await axios.post(
-      'http://localhost:3001/api/enter/logout',
+      'https://rhombus-tnso.onrender.com/api/enter/logout',
       {}, 
       {
         withCredentials: true,

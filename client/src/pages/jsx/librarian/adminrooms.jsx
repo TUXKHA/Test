@@ -29,10 +29,10 @@ function S() {
 
   const getData = async () => {
     try {
-      const roomsRes = await axios.get("http://localhost:3001/api/enter/rooms",
+      const roomsRes = await axios.get("https://rhombus-tnso.onrender.com/api/enter/rooms",
     { withCredentials: true });
     setAllData(roomsRes.data.data);
-      const timesRes = await axios.get("http://localhost:3001/api/enter/applyroomshow",
+      const timesRes = await axios.get("https://rhombus-tnso.onrender.com/api/enter/applyroomshow",
     { withCredentials: true });
       setEndTimes(timesRes.data.data);
     } catch (error) {

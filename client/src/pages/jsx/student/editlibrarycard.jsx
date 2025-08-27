@@ -17,7 +17,7 @@ function AddBook() {
 
   const fetchBook = async () => {
     try {
-      const res = await axios.get(`http://localhost:3001/api/enter/getlibrary`,
+      const res = await axios.get(`https://rhombus-tnso.onrender.com/api/enter/getlibrary`,
     { withCredentials: true });
       if(res.data==="NO"){
         alert("Library Card Not Found");
@@ -45,7 +45,7 @@ function AddBook() {
   SID
 };
 
-    axios.post("http://localhost:3001/api/enter/edilibrarycard", form,
+    axios.post("https://rhombus-tnso.onrender.com/api/enter/edilibrarycard", form,
     { withCredentials: true })
       .then(result => {
         alert(result.data);

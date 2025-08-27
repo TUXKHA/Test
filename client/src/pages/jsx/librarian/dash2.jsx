@@ -39,7 +39,7 @@ const navigate = useNavigate();
 const handleLogout = async () => {
   try {
     const response = await axios.post(
-      'http://localhost:3001/api/enter/logout',
+      'https://rhombus-tnso.onrender.com/api/enter/logout',
       {},
       {
         withCredentials: true, 

@@ -12,7 +12,7 @@ function S()
 
       const handleSubmit = (e) => {
           e.preventDefault()
-          axios.post(`http://localhost:3001/api/enter/deletroomreservation`,{ SID,roomnumber },
+          axios.post(`https://rhombus-tnso.onrender.com/api/enter/deletroomreservation`,{ SID,roomnumber },
   {
     withCredentials: true,
   })

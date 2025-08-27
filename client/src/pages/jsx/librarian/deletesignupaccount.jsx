@@ -11,7 +11,7 @@ function S()
 
       const handleSubmit = (e) => {
           e.preventDefault()
-          axios.delete(`http://localhost:3001/api/enter/deletesignup`, {
+          axios.delete(`https://rhombus-tnso.onrender.com/api/enter/deletesignup`, {
   data: { email },
   withCredentials: true
       })

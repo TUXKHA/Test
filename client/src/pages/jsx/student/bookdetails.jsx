@@ -15,11 +15,11 @@ const BookDetails = () => {
 
   const fetchBook = async () => {
     try {
-      const res = await axios.get(`http://localhost:3001/api/enter/book/${id}`,
+      const res = await axios.get(`https://rhombus-tnso.onrender.com/api/enter/book/${id}`,
     { withCredentials: true });
       setBook(res.data.data);
 
-      const res2 = await axios.get(`http://localhost:3001/api/enter/getfavourite/${id}`,
+      const res2 = await axios.get(`https://rhombus-tnso.onrender.com/api/enter/getfavourite/${id}`,
     { withCredentials: true });
     if(res2==="Nope"){
       alert("NEED LIBRARY ID");
@@ -34,12 +34,12 @@ const BookDetails = () => {
   const favouritebook = async () => {
     try {
       if (fbook === "NO") {
-        const res = await axios.post(`http://localhost:3001/api/enter/addfavourite`,{ id },
+        const res = await axios.post(`https://rhombus-tnso.onrender.com/api/enter/addfavourite`,{ id },
     { withCredentials: true });
         alert(res.data);
         fetchBook(); 
       } else {
-        const res = await axios.delete(`http://localhost:3001/api/enter/removefavourite`, {
+        const res = await axios.delete(`https://rhombus-tnso.onrender.com/api/enter/removefavourite`, {
           data: { id }
         ,
     withCredentials: true });

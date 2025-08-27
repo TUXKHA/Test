@@ -15,11 +15,11 @@ const BookDetails = () => {
 
   const fetchBook = async () => {
     try {
-      const res = await axios.get(`http://localhost:3001/api/enter/book/${id}`,
+      const res = await axios.get(`https://rhombus-tnso.onrender.com/api/enter/book/${id}`,
     { withCredentials: true });
       setBook(res.data.data);
 
-      const res2 = await axios.get(`http://localhost:3001/api/enter/getfavourite/${id}`,
+      const res2 = await axios.get(`https://rhombus-tnso.onrender.com/api/enter/getfavourite/${id}`,
     { withCredentials: true });
       setFavouriteBook(res2.data);
       console.log(res2.data);

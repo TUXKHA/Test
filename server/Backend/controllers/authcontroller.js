@@ -788,8 +788,8 @@ export const forgotpassword = async (req, res) => {
       html: `
         <h1>Reset Your Password</h1>
         <p>Click the link below to reset your password:</p>
-        <a href="http://localhost:3000/reset-password/${token}">
-          http://localhost:3000/reset-password/${token}
+        <a href="https://rhombus-tnso.onrender.com/reset-password/${token}">
+          https://rhombus-tnso.onrender.com/reset-password/${token}
         </a>
         <p>This link will expire in 10 minutes.</p>
         <p>If you didn't request this, please ignore this email.</p>
@@ -831,7 +831,7 @@ export const forgotpassword = async (req, res) => {
       });
 
       console.log("User Logged In, Token:", token);
-      return res.redirect("http://localhost:3001/google-success");
+      return res.redirect("https://rhombus-tnso.onrender.com/google-success");
     }
 
     // Check for Admin
@@ -847,7 +847,7 @@ export const forgotpassword = async (req, res) => {
       });
 
       console.log("Admin Logged In, Token:", token);
-      return res.redirect("http://localhost:3001/google-success");
+      return res.redirect("https://rhombus-tnso.onrender.com/google-success");
     }
 
     // If neither user nor admin found, send 401

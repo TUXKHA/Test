@@ -16,7 +16,7 @@ function S()
 
       useEffect(() => {getBooks();}, []);
       const getBooks = async () => {
-      const result = await axios.get("http://localhost:3001/api/enter/allbookshistoryreturned",
+      const result = await axios.get("https://rhombus-tnso.onrender.com/api/enter/allbookshistoryreturned",
     { withCredentials: true });
       console.log(result);
       setBooks(result.data.data);
@@ -24,7 +24,7 @@ function S()
 
       const handleSubmit = (e) => {
           e.preventDefault()
-          axios.post("http://localhost:3001/api/enter/returnbook", {bookid,SID,issudate,returndate},
+          axios.post("https://rhombus-tnso.onrender.com/api/enter/returnbook", {bookid,SID,issudate,returndate},
     { withCredentials: true })
           .then(result => {
               console.log(result)

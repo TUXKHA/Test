@@ -21,7 +21,7 @@ const BooksGrid = () => {
 
   const getData = async () => {
     try {
-      const roomsRes = await axios.get("http://localhost:3001/api/enter/allbooks",
+      const roomsRes = await axios.get("https://rhombus-tnso.onrender.com/api/enter/allbooks",
     { withCredentials: true });
       setAllData(roomsRes.data.data);
     } catch (error) {

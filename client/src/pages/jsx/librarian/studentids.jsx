@@ -10,7 +10,7 @@ function S()
 
       const handleSubmit = (e) => {
           e.preventDefault()
-          axios.post(`http://localhost:3001/api/enter/addsid`,{ SID},
+          axios.post(`https://rhombus-tnso.onrender.com/api/enter/addsid`,{ SID},
     { withCredentials: true })
           .then(result => {
               console.log(result)

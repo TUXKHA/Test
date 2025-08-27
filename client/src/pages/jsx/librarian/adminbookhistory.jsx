@@ -15,7 +15,7 @@ function S() {
 
   const getData = async () => {
     try {
-      const roomsRes = await axios.get("http://localhost:3001/api/enter/allbookhistory",
+      const roomsRes = await axios.get("https://rhombus-tnso.onrender.com/api/enter/allbookhistory",
     { withCredentials: true });
       setAllData(roomsRes.data.data);
     } catch (error) {

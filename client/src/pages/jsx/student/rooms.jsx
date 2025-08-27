@@ -32,11 +32,11 @@ function S() {
   // Fetch room availability and reservation end times
   const getData = async () => {
     try {
-      const roomsRes = await axios.get("http://localhost:3001/api/enter/rooms",
+      const roomsRes = await axios.get("https://rhombus-tnso.onrender.com/api/enter/rooms",
   {
     withCredentials: true,
   });
-      const timesRes = await axios.get("http://localhost:3001/api/enter/applyroomshow",
+      const timesRes = await axios.get("https://rhombus-tnso.onrender.com/api/enter/applyroomshow",
   {
     withCredentials: true,
   });

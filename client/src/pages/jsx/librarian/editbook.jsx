@@ -24,7 +24,7 @@ function AddBook() {
 
   const fetchBook = async () => {
     try {
-      const res = await axios.get(`http://localhost:3001/api/enter/book/${id}`,
+      const res = await axios.get(`https://rhombus-tnso.onrender.com/api/enter/book/${id}`,
     { withCredentials: true });
       const data = res.data.data;
       setBookName(data.bookName || '');
@@ -53,7 +53,7 @@ function AddBook() {
       form.append('image', imageFile);
     }
 
-    axios.post("http://localhost:3001/api/enter/editbook", form,
+    axios.post("https://rhombus-tnso.onrender.com/api/enter/editbook", form,
     { withCredentials: true })
       .then(result => {
         alert(result.data);

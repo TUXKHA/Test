@@ -12,7 +12,7 @@ function S()
     useEffect(() => {getData();}, []);
         const getData = async () => {
           console.log(SID);
-        const result = await axios.get("http://localhost:3001/api/enter/allreturndue",
+        const result = await axios.get("https://rhombus-tnso.onrender.com/api/enter/allreturndue",
     { withCredentials: true });
         console.log(result);
         setAllData(result.data.data);

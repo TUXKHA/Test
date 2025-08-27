@@ -24,7 +24,7 @@ route.post('/forgetPassword',forgotpassword);
 route.get('/me',Tester);
 route.get("/log/google",passport.authenticate("google",{scope:["profile","email"]}))
 route.get("/log/google/callback",passport.authenticate('google', 
-  { session: false, failureRedirect: "http://localhost:3001" }),
+  { session: false, failureRedirect: "https://rhombus-tnso.onrender.com" }),
   googleCallback
 );
 
